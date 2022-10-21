@@ -22,7 +22,7 @@
 <h3 align="center">Fullask-REST-Framework</h3>
 
   <p align="center">
-    A full-supported flask extension for build REST API
+    A fully-supported flask extension for build REST API.
     <br />
     <a href=""><strong>Explore the docs »</strong></a>
     <br />
