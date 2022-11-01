@@ -31,7 +31,7 @@ jobs:
             ${{ runner.os }}-pip-
 
       - name: Install dependencies
-        run: python3 -m pip install -r ./requirements.txt
+        run: ls
 
       - run: make html
 
