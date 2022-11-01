@@ -104,11 +104,11 @@ _writing in progress..._
 
 ---
 
-- feat : A new feature.
-- fix : A bug fix.
-- typo : A typo fix.
-- docs: Documentation only changes. this includes "README.md", and "/docs/".
-- refactor: A code change that neither fixes a bug nor adds a feature.
+- FEAT : A new feature.
+- FIX : A bug fix.
+- TYPO : A typo fix.
+- DOCS: Documentation only changes. this includes "README.md", and "/docs/".
+- REFACTOR: A code change that neither fixes a bug nor adds a feature.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
