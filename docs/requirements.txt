@@ -1,1 +1,2 @@
 pallets_sphinx_themes
+myst-parser
