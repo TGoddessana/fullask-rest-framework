@@ -1,2 +1,3 @@
+jinja2 > 3.0
 pallets_sphinx_themes
 myst-parser
