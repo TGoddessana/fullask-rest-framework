@@ -33,7 +33,8 @@ jobs:
       - name: Install dependencies
         run: python3 -m pip install -r docs/requirements.txt
 
-      - run: make html
+      - name: Build html
+        run: cd docs && make html
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
