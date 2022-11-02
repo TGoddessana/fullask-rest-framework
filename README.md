@@ -24,7 +24,7 @@
   <p align="center">
     A fully-supported flask extension for build REST API.
     <br />
-    <a href=""><strong>Explore the docs »</strong></a>
+    <a href="https://tgoddessana.github.io/fullask-rest-framework/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="">Report Bug</a>
@@ -88,7 +88,7 @@ install using pip command.
 
 ---
 something usage..  
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://tgoddessana.github.io/fullask-rest-framework/)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -107,7 +107,7 @@ _writing in progress..._
 - FEAT : A new feature.
 - FIX : A bug fix.
 - TYPO : A typo fix.
-- DOCS: Documentation only changes. this includes "README.md", and "/docs/".
+- DOCS : Documentation only changes. this includes "README.md", and "/docs/".
 - REFACTOR: A code change that neither fixes a bug nor adds a feature.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
