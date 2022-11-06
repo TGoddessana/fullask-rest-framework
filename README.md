@@ -108,7 +108,8 @@ _writing in progress..._
 - FIX : A bug fix.
 - TYPO : A typo fix.
 - DOCS : Documentation only changes. this includes "README.md", and "/docs/".
-- REFACTOR: A code change that neither fixes a bug nor adds a feature.
+- REFACTOR : A code change that neither fixes a bug nor adds a feature.
+- DEPLOY : A code change for deploy this package.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
