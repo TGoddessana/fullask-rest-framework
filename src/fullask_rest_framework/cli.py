@@ -1,7 +1,25 @@
-from pathlib import Path
-
-import click
 import os
+from pathlib import Path
+import click
+from click import BadParameter
+from jinja2 import Template
+
+from typing import Final
+
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def write_file_from_template(
+    template_path: str,
+    template_variables: dict,
+    output_directory: str,
+) -> None:
+    template = Template(open(template_path).read())
+    rendered = template.render(template_variables)
+    created_filename = template_path.split("/")[-1][:-9]
+    output_path = os.path.join(output_directory, created_filename)
+    with open(output_path, "w+") as f:
+        f.write(rendered)
 
 
 @click.group
@@ -10,43 +28,49 @@ def main():
 
 
 @main.command()
-@click.argument('app_name')
-def startfullaskapp(app_name):
+@click.argument("project_name", type=click.STRING, required=True)
+@click.argument("path", type=click.Path(exists=True), default=".", required=True)
+def startproject(project_name: str, path: str) -> None:
     """
-    create a fullask-rest-framework app.
+    Create a new Project Files at this given path and project name.
 
-    app_name
-        ├── app_name_api
-        │         ├── __init__.py
-        │         ├── views.py
-        │         ├── models.py
-        │         └── schemas.py
-        ├── __init__.py
-        ├── config.py
-        └── tests.py
-
-    :param app_name: app name you want to create.
-    :param path: filepath your app will be located.
+    :param project_name: project name.
+    :param path: project root path.
     :return: None
     """
-    app_path = os.getcwd() + "/" + app_name
-    Path(app_path).mkdir(parents=True, exist_ok=True)
-    with open("__init__.py", 'w') as f:
-        f.write(f"# {app_name} created by fullask-rest-framework. write your application factory function here.")
-    with open("config.py", 'w') as f:
-        f.write(f"# write your models here.")
-    with open("tests.py", 'w') as f:
-        f.write(f"# write your {app_name} tests here.")
-    Path(f"/{app_path}/api").mkdir(parents=True, exist_ok=True)
-    with open(f"/{app_path}/api/__init__.py", 'w') as f:
-        pass
-    with open(f"/{app_path}/api/views.py", 'w') as f:
-        pass
-    with open(f"/{app_path}/api/models.py", 'w') as f:
-        pass
-    with open(f"/{app_path}/api/schemas.py", 'w') as f:
-        pass
 
+    project_template_path: Final[str] = os.path.abspath(
+        os.path.join(ROOT_DIR, "project_template")
+    )
+    selected_path_by_user: Final[str] = os.path.abspath(os.path.join(Path.cwd(), path))
+
+    if Path(path).is_dir():
+        # make project root package.
+        project_path = Path(selected_path_by_user + "/" + project_name)
+        try:
+            project_path.mkdir(parents=True)
+        except FileExistsError:
+            raise BadParameter(
+                f"The folder name with {project_name} already exists.",
+                param_hint="[PROJECT_NAME]",
+            )
+        project_path.joinpath("__init__.py").touch()
+        # make config package with template files.
+        config_path = project_path.joinpath("./config")
+        config_path.mkdir(parents=True)
+        for path, subdirs, files in os.walk(project_template_path):
+            for name in files:
+                write_file_from_template(
+                    os.path.join(path, name),
+                    {"project_name": project_name},
+                    str(config_path),
+                )
+
+    else:
+        raise BadParameter(
+            f"{os.path.abspath(os.path.join(Path.cwd(), path))} is a file, not directory.",
+            param_hint="[PATH]",
+        )
 
 
 if __name__ == "__main__":
