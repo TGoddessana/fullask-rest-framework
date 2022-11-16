@@ -113,9 +113,6 @@ _For more examples, please refer to the [Documentation](https://tgoddessana.gith
 ---
 
 - [ ] create fully-supported app directories by command line interface
-    - [ ] create api packages
-    - [ ] create test packages
-      - [ ] create model packages
 - [ ] support serialize & deserialize system
 - [ ] support admin page
 
