@@ -16,7 +16,8 @@
 <br />
 <div align="center">
   <a href="https://github.com/tgoddessana/flask-rest-framework">
-    <img src="images/logo.png" alt="Logo" width="300" height="300">
+    <img src="https://github.com/TGoddessana/fullask-rest-framework/blob/0.0.x/images/frf-logo.png.png"
+    style="width:60%";>
   </a>
 
 <h3 align="center">Fullask-REST-Framework</h3>
@@ -75,7 +76,7 @@
 install using pip command.
 
    ```
-   pip install flask-rest-framework
+   pip install fullask-rest-framework
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -89,14 +90,6 @@ install using pip command.
 ---
 something usage..  
 _For more examples, please refer to the [Documentation](https://tgoddessana.github.io/fullask-rest-framework/)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Versioning rules
-
----
-_writing in progress..._
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,8 +115,7 @@ _writing in progress..._
 - [ ] create fully-supported app directories by command line interface
     - [ ] create api packages
     - [ ] create test packages
-      - [ ]create model packages
-- [ ] support sqlalchemy ORM system
+      - [ ] create model packages
 - [ ] support serialize & deserialize system
 - [ ] support admin page
 
