@@ -17,7 +17,7 @@
 <div align="center">
   <a href="https://github.com/tgoddessana/flask-rest-framework">
     <img src="https://github.com/TGoddessana/fullask-rest-framework/blob/0.0.x/images/frf-logo.png.png"
-    style="width:60%";>
+    style="width:75%";>
   </a>
 
 <h3 align="center">Fullask-REST-Framework</h3>
@@ -35,7 +35,9 @@
 </div>
 
 
-<!-- ABOUT THE PROJECT -->
+<!---------------------------------------------------------------------------------------------->
+
+<br/>
 
 ## About Fullask-REST-Framework
 
@@ -55,8 +57,9 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!---------------------------------------------------------------------------------------------->
 
-<!-- Requirements -->
+<br/>
 
 ## Requirements
 
@@ -65,13 +68,19 @@
 - python 3.8+
 - flask 2.0 +
 
-<!-- GETTING STARTED -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!---------------------------------------------------------------------------------------------->
+
+<br/>
 
 ## Getting Started
 
+---
+
 ### Installation
 
----
 
 install using pip command.
 
@@ -83,7 +92,9 @@ install using pip command.
 
 
 
-<!-- USAGE EXAMPLES -->
+<!---------------------------------------------------------------------------------------------->
+
+<br/>
 
 ## Usage
 
@@ -92,6 +103,11 @@ something usage..
 _For more examples, please refer to the [Documentation](https://tgoddessana.github.io/fullask-rest-framework/)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!---------------------------------------------------------------------------------------------->
+
+<br/>
 
 ## Commit convention
 
@@ -106,7 +122,9 @@ _For more examples, please refer to the [Documentation](https://tgoddessana.gith
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ROADMAP -->
+<!---------------------------------------------------------------------------------------------->
+
+<br/>
 
 ## Roadmap
 
@@ -121,9 +139,9 @@ and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!---------------------------------------------------------------------------------------------->
 
-
-<!-- CONTRIBUTING -->
+<br/>
 
 ## Contributing
 
@@ -144,9 +162,9 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!---------------------------------------------------------------------------------------------->
 
-
-<!-- LICENSE -->
+<br/>
 
 ## License
 
@@ -156,9 +174,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!---------------------------------------------------------------------------------------------->
 
-
-<!-- CONTACT -->
+<br/>
 
 ## Contact
 
@@ -170,9 +188,10 @@ Project Link: [https://github.com/tgoddessana/flask-rest-framework](https://gith
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!---------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
